@@ -1,0 +1,25 @@
+{
+    "name": "trueme/image-processing",
+    "type": "library",
+    "description": "This feature will help you process images as validate, compress and more",
+    "keywords": [
+        "library"
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "TrueMe\\Image\\": "src/Image"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "ZipImg": "TrueMe\\Image\\Facades\\ZipImgFacade",
+                "IniObj": "TrueMe\\Image\\Facades\\IniObjFacade"
+            },
+            "providers": [
+                "TrueMe\\Image\\Providers\\ImageProcessingProvider"
+            ]
+        }
+    }
+}
