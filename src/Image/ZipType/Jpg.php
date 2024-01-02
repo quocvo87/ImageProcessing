@@ -2,7 +2,7 @@
 
 class Jpg
 {
-    public function compress($pngPath='')
+    public function compress()
     {
         // Need to implement in the future
         return 'Jpg';
