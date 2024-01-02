@@ -23,16 +23,16 @@ You want to validate, compress images and more
                 ....,
                 "require": {
                     ....,
-                    "trueme/ImageProcessing": "dev-master",
+                    "trueme/image-processing": "dev-master",
                 },
                 .....
-                "repositories": {
+                "repositories": [
                     ...,
                     {
                         "type": "vcs",
-                        "url": "https://github.com/quocvo87/composer.git/ImageProcessing.git"
+                        "url": "https://github.com/quocvo87/ImageProcessing.git"
                     }
-                }
+                ]
             }
 
         + Goto YourProject and run: composer update
