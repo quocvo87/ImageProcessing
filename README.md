@@ -46,5 +46,5 @@ You want to validate, compress images and more
 
             use ZipImg;
 
-            $compressedImg = ZipImg::jpg('path_to_image.jpg'))->compress();
+            $compressedImg = ZipImg::jpg('path_to_image.jpg')->compress();
 

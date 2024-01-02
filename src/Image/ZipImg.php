@@ -13,7 +13,8 @@ class ZipImg extends BaseImage
             if (!$this->path) $this->setPath(@$params[0]);
 
             if (!$this->type = IniObj::new($ref)) return $this->type;
-            if (@$this->iniValidation()->isValid()) return $this->type->compress($this->path);
+
+            if (@$this->iniValidation()->isValid()) return $this->type;
 
             \Log::info('ImageProcessing package: ' . $ref . ' is not valid image'); return false;
 
